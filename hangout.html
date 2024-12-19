@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="adoptAPal.css">
+    <style>
+        body{
+            background-color: rgb(255, 226, 240);
+            margin: 0px;
+            font-family: Helvetica;
+            color: rgb(28, 88, 147);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="company">
+        <h1>Adopt A Pal</h1>
+    </div>
+    <div class="top-links">
+        <a href="signup.php" class="nav-link">Sign Up</a>
+        <a href="login.php" class="nav-link">Login</a>
+        <a href="search.php" class="nav-link">Search</a>
+    </div>
+    <nav>
+        <ul>
+            <li id="adoption_tab">
+                <a href = "index.php">
+                    <b>Adoption Center</b>
+                </a>
+            </li>
+    
+            <li id="hangout_tab">
+                <a href = "hangout.html">
+                    <b>Hangout</b>
+                </a>
+            </li>
+
+            <!-- <li>
+                <a href = "about.html">
+                    <b> History </b>
+                </a>
+            </li> -->
+        </ul>
+    </nav>
+    <div id="hangout">
+        <div id="welcomeDiv">
+            <h2 id="welcome">Welcome to your hangout!</h2>
+        </div>
+       
+
+        <h3 id="instructions"> <i> Drag and drop to move your new pals! (Click to view their certificate!) </i></h3>
+
+
+        <div id="selectBackground">
+            <label for="setting"> Choose a Hangout Spot:</label><br>
+                <select name="setting" id="setting">
+                    <option value="" > Select A Setting </option>
+                    <option value="cafe" data-name= "Café" data-code="cafe.avif"> Café </option>
+                    <option value="library"  data-name= "Library" data-code="library.avif"> Library </option>
+                    <option value="park" data-name= "Park" data-code="park.jpg"> Park </option>
+                    <option value="spring" data-name= "Spring Fling" data-code="spring.avif"> Spring Fling </option>
+                    <option value="summer" data-name= "Summer Splash" data-code="summer.webp"> Summer Splash </option>
+                    <option value="fall" data-name= "Fall Festival" data-code="fall.jpg"> Fall Festival </option>
+                    <option value="winter" data-name= "Winter Wonderland" data-code="winter.avif"> Winter Wonderland </option>
+                </select>
+        </div>
+
+        <div id="area">
+        </div>
+    </div>
+
+    <audio id="openUp">
+        <source src="sounds/sparkle.m4a" type="audio/wav">
+    </audio>
+
+    <audio id="close">
+        <source src="sounds/Double Knock.mp3" type="audio/wav">
+    </audio>
+
+    <script src="adoptAPal.js"></script>
+</body>
+</html>

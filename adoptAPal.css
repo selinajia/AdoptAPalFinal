@@ -1,0 +1,722 @@
+@font-face {
+    font-family: cursive_font;
+    src: url("fonts/Sunset\ Beach\ Personal\ Use.ttf")
+    /* src: url("fonts/I\ Love\ Glitter\ -\ OTF.otf") */
+}
+
+/* welcome message. The one that appears after users log in */
+.welcome-message {
+    text-align: center;
+    color: rgb(28, 88, 147);
+    font-size: 30px;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+}
+
+/* Styles for the top links */
+.top-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.top-links .nav-link {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(28, 88, 147); /* Dark blue */
+    border-radius: 5px;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.top-links .nav-link:hover {
+    background-color: #d7f5ff; /* Light blue */
+    color: rgb(28, 88, 147); /* Dark blue text */
+    transform: scale(1.1);
+}
+
+.company{
+    color: rgb(28, 88, 147);     /* Dark blue accents */
+    margin: 7px;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive_font;
+}
+ /* Nav styles */
+nav{
+    margin: 0px;
+}
+nav ul {
+    list-style: none;
+    background-color: #a7e5fa;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(28, 88, 147);
+    padding: 15px 20px;
+    display: block;
+    font-size: 1.8vw;
+    font-family: helvetica;
+}
+
+nav ul li:hover,
+nav ul li a:hover {
+    background-color: #d7f5ff;
+}
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#adoption_tab {
+    width: 50%;
+}
+#hangout_tab {
+    width: 50%;
+}
+#shoppingCart{
+    text-align: center;
+}
+
+#shoppingCart div{
+    display: flex;
+    
+}
+
+#shoppingCart img{
+    width: 200px;
+}
+
+
+.quantitySelect{
+    display: flex;
+    height: 20px;
+}
+
+
+/* HANGOUT AREA STYLES */
+
+
+#welcomeDiv{
+    background-color: white;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: -1px 2px 6px rgb(0 0 0 / 36%);
+}
+
+#welcome{
+    text-align: center;
+    color: rgb(33, 44, 55);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#instructions{
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(255 255 255);
+    text-shadow: 1px 1px 3px black;
+}
+
+#selectBackground label{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-family: helvetica;
+    display: block;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#selectBackground select{
+    font-family: helvetica;
+    display: block;
+    padding: 5px;
+}
+
+#selectBackground{
+    margin: 30px;
+}
+
+#test{
+    margin-left: 30px;
+}
+
+#area{
+    height: 70vh;
+    position: relative;
+}
+
+#hangout{
+    background-attachment: scroll;
+    padding-top: 50px;
+    margin-top: 0px;
+}
+
+.newPal{
+    position: absolute;
+    width: 200px;
+    cursor: default;
+}
+
+.animalPic{
+    width: 180px;
+    cursor: move;
+}
+
+.animalPic.dragging {
+    opacity: 0.5;
+}
+
+
+.info{
+    position: absolute;
+    top: -260px;   
+    left: -100px;       
+    background-color: #fffbf3;
+    padding: 30px;
+    padding-top: 10px;
+    width: 350px;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    border: solid 5px #acd9ff;
+    line-height: 10px;
+    z-index: 1000;
+}
+
+.palName{
+    text-align: center;
+}
+
+.palPronoun{
+    text-align: center;
+}
+
+.exit{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(106 104 104);
+    color: white;
+    position: absolute;
+    top: -17px;
+    right: -18px;
+    font-family: helvetica;
+    text-align: center;
+    line-height: 22px;
+    display: none;
+}
+
+.info:hover .exit {
+    display: block;
+}
+
+body {
+    background: linear-gradient(rgb(209, 255, 255), rgb(240, 255, 255)) no-repeat fixed center center / cover;;
+}
+
+h3 {
+    color: #b7b4b4;
+    font-family: helvetica;
+    text-align: center;
+    font-size: 15px;
+}
+h1 {
+    color: rgb(28, 88, 147);     /* Dark blue accents */
+    margin: 7px;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive_font;
+}
+h1:hover {
+    transform: scale(1.05);
+}
+
+#movies{
+    margin-top: 25px;
+}
+
+#cart_input {
+    font-family: helvetica;
+    border: rgb(28, 88, 147);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px;
+    /* width: 225px; changed!! */
+    width: 400px;
+    /* height: 155px; changed !! */
+    margin: auto;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.248);
+    margin-top: 25px;
+}
+
+#cart_form{
+    margin-top: 25px;
+}
+
+.input_labels {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: rgb(28, 88, 147);
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column; /* Keep each label and input together */
+}
+
+.inputs {
+    /* border-color: whitesmoke; */
+    font-family: Helvetica;
+    color: rgb(28, 88, 147);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.inputs2 {
+    font-family: Helvetica;
+    color: rgb(28, 88, 147);
+}
+
+#cart_total1 {
+    /* font-family: helvetica;
+    font-weight: bold;
+    color: rgb(28, 88, 147);
+    width: 190px;
+    height: 72px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    padding-top: 20px; */
+    font-family: helvetica;
+    font-weight: bold;
+    color: rgb(28, 88, 147);
+    width: 12%;
+    height: 110px;
+    position: absolute;
+    right: 0px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+#cart_total2 {
+    /* font-family: helvetica;
+    font-weight: bold;
+    color: rgb(28, 88, 147);
+    width: 225px;
+    height: 72px;
+    position: absolute;
+    right: 0px; */
+    font-family: helvetica;
+    font-weight: bold;
+    color: rgb(28, 88, 147);
+    width: 12%;
+    height: 110px;
+    position: absolute;
+    right: 0px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+#added {
+    font-family: helvetica;
+    font-weight: bold;
+    text-align: center;
+    border: rgb(28, 88, 147);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    background-color: white;
+    color: rgb(28, 88, 147);
+    padding: 20px;
+    width: 225px;
+    height: 100px;
+    margin: auto;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.248);
+}
+#checkout_form {
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 18px;
+    border: rgb(28, 88, 147);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    background-color: white;
+    color: rgb(28, 88, 147);
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.248);
+    margin-top: 50px;
+}
+/* Individual buttons from class form2buttons */
+#continue_shopping {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: helvetica;
+    padding: 5px 10px;
+}
+#checkout_reset {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: helvetica;
+    padding: 5px 10px;
+}
+
+/* place order button moved down so the font color css works */
+
+#checkout_form label {
+    /* display: block; */
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#checkout_form input[type="text"],
+#checkout_form input[type="email"],
+#checkout_form input[type="number"],
+#checkout_form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#checkout_form input[id="first_name"],
+#checkout_form input[id="last_name"],
+#checkout_form input[id="credit_card"],
+#checkout_form input[id="phone"],
+#checkout_form input[id="email"],
+#checkout_form select {
+    width: calc(100% - 20px);
+}
+
+#checkout_form input[id="phone"],
+#checkout_form input[id="email"],
+#checkout_form select{
+    margin-top: 0px
+}
+
+
+#checkout_form input[id="creditCVV"],
+#checkout_form input[id="creditExpDate"],
+#checkout_form select {
+    width: calc(45% + 0.5px);
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#checkout_form input[type="radio"] {
+    margin-right: 8px;
+    margin-top: 20px;
+}
+
+#selected_movie {
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(28, 88, 147);
+    padding-bottom: 7px;
+}
+#button_div {           /* Centers the submit and cancel buttons */
+    padding-top: 5px;
+    text-align: center;
+}
+
+#checkout2_div {   /* Position of second checkout button (on the right side) */
+    margin: auto;
+    position: absolute;
+    right: 79px;
+    top: 470px;
+    padding-top: 10px;
+}
+
+#checkout2_div input{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: helvetica;
+    padding: 5px 10px
+}
+
+#first_name, 
+#last_name, 
+#email, 
+#phone, 
+#credit_card{
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+}
+
+ #summary_checkout {     /* Centers totals */
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+#checkout_directions {   /* Centers checkout directions */
+    text-align: center;
+}
+
+#checkout_directions i {   /* Centers checkout directions */
+    color: rgb(136 174 211);
+    font-size: 14px;
+}
+
+.blue_text {
+    color: rgb(28, 88, 147);
+}
+.checking_out{      
+    margin-left: 10%;
+}     
+/* Left margin for checkout form */
+.form2buttons {
+    margin: auto;
+    text-align: center;
+}
+.buttons {
+    background-color: white;
+    border-radius: 1px;
+    border-color: whitesmoke;
+    color: rgb(28, 88, 147);
+}
+.inputs {
+    border-color: whitesmoke;
+    color: rgb(28, 88, 147);
+}
+
+.inputs2 {
+    font-family: Helvetica;
+    color: rgb(28, 88, 147);
+}
+
+.input_labels {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: rgb(28, 88, 147);
+    margin-left: 95px;
+}
+.hidden {
+    display: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 25px;
+}
+.row div{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.248);
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.row img{ 
+    object-fit: cover;
+}
+#cat{
+    height: 0px;
+}
+
+.column {
+    flex: 10%;
+    max-width: 10%;
+    padding: 2%;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    font-family: helvetica;
+    font-weight: bold;
+    color: rgb(28, 88, 147);
+}
+.product:hover {
+    transform: scale(1.05);
+}
+@media screen and (min-width: 961px) {
+    .column {
+        flex: 29%;
+        max-width: 75%;
+    }
+}
+/* Media query for medium browser width */
+@media screen and (min-width: 481px) and (max-width: 960px) {
+    .column {
+        flex: 40%;
+        max-width: 40%;
+    }
+}
+/* Media query for narrow browser width */
+@media screen and (max-width: 480px) {
+    .column {
+        flex: 100%;
+        max-width: 100%; 
+    }
+}
+
+/* certificate */
+
+#addedCertificates{
+    display: grid;
+    place-items: center;
+}
+
+.newCertificate{
+    background-color: #fffbf3;
+    border-radius: 20px;
+    border: solid 8px #a5e0ff;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 100px 30px;
+    width: 80%;
+    height: 700px;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.248);
+}
+
+.newCertificate div{
+    margin: auto;
+    width: 50%;
+}
+
+
+.profilePic{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.customInfo{
+    margin: auto;
+    font-size: 24px;
+    width: 50%;
+}
+
+#addedCertificates{
+    display: grid;
+    place-items: center;
+    margin-top: 25px;
+}
+
+.newCertificate{
+    background-color: #fffbf3;
+    border-radius: 20px;
+    border: solid 8px #a5e0ff;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 25px 30px;
+    width: 80%;
+    height: 740px;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.248);
+}
+
+.newCertificate div{
+    margin: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.profilePic{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.customInfo{
+    margin: auto;
+    font-size: 24px;
+    width: 50%;
+    font-family: Helvetica;
+    color: rgb(28, 88, 147);
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#certiSubmit {
+    font-size: 20px;
+}
+
+input:not(#certiSubmit, #place_order) {
+    font-family: Helvetica;
+    font-size: 18px;
+    color: rgb(28, 88, 147);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* place order from receipt button */
+#place_order {
+    font-weight: bold;
+    background-color: rgb(46 112 178);
+    color:white;
+    font-family: Helvetica;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+h3 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.certiTitle{
+    font-size: 24px;
+    color: rgb(28, 88, 147);
+}

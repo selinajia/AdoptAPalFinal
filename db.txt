@@ -1,0 +1,9 @@
+bear,Beloved Bear,Price: $10.00,Color: Brown,Description: A warm cuddly brown virtual plushie bear that would love to find a home in your desktop.
+dog,Dashing Dog,Price: $10.00,Color: Golden,Description: A loyal virtual golden retriever plushie that would love to dash around on your desktop.
+cat,Charismatic Cat,Price: $10.00,Color: Orange and White,Description: A charming virtual calico cat plushie with a ruffled texture to brighten up your desktop. 
+giraffe,Gentle Giraffe,Price: $10.00,Color: Beige and Tan,Description: A looong necked virtual plushie giraffe friend for your desktop with a gentle demeanour and loves sunshine. 
+bunny,Bashful Bunny,Price: $10.00,Color: Light Grey,Description: A bashful grey virtual plushie bunny that hops around your desktop.
+panda,Playful Panda,Price: $10.00,Color: Black and White,Description: A perfectly huggable panda virtual plushie that lounges all day on your desktop.
+elephant,Elegant Elephant,Price: $10.00,Color: Taupe,Description: An elegant virtual plushie elephant that roams gracefully around your desktop.
+dino,Dauntless Dino,Price: $10.00,Color: Green,Description: A brave little dinosaur virtual plushie that will protect your desktop for any danger.
+unicorn,Unique Unicorn,Price: $10.00,Color: White and Pink,Description: A magically unique rainbow unicorn virtual plushie that sparkles and adds a sparkle to your desktop.  
